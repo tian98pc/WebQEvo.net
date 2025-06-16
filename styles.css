@@ -27,9 +27,13 @@ body {
     padding: 0 20px;
 }
 
-/* Encabezado */
+/* --- Header Principal --- */
 header {
-    background-color: #6A1B9A;
+    background-color: #6A1B9A; /* Mismo que pie de pagina */
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 15px 0;
     position: sticky;
     top: 0;
@@ -37,40 +41,87 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-header .container {
+.container.header-top {
+    max-width: 2000px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo img {
-    width: 100px;
-    height: auto;
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
 }
 
-nav ul {
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+.pay-button {
+    margin-right: 10px; /* Espacio entre "Pagar" y el menú hamburguesa */
+}
+
+.menu-toggle {
+    display: none; /* Oculto por defecto */
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* --- Logo --- */
+.logo img {
+    height: 100px;
+    width: center;
+}
+
+/* --- Iconos de Redes Sociales --- */
+.social-icons {
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #c336ff;
+}
+
+
+/* --- Menú de Navegación --- */
+.main-nav ul {
     list-style: none;
     display: flex;
+    gap: 30px;
+    margin: 50px;
+    padding: 5px;
 }
 
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
+.main-nav ul li a {
     text-decoration: none;
-    color: #d1d1d1;
+    color: #fff;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-    color: #6A1B9A; /* Morado elegante */
+.main-nav ul li a:hover {
+    color: #ff6f61;
 }
 
+/* --- Botón Pagar --- */
 .pay-button {
-    background-color: #d83aff;
-    color: #000000;
+    background-color: #d64fff;
+    color: #fff;
     border: none;
     padding: 10px 20px;
     font-size: 14px;
@@ -80,39 +131,22 @@ nav ul li a:hover {
 
 .pay-button a {
     text-decoration: none;
-    color: #ffffff;
+    color: #fff;
 }
 
 .pay-button:hover {
-    background-color: #4A148C; /* Morado más intenso */
+    background-color: #e65148;
 }
 
-/* Header superior - Iconos de contacto */
-.contact-icons a {
-    color: #ffffff; /* Morado elegante */
-    transition: color 0.3s ease;
-}
-
-.contact-icons a:hover {
-    color: #bc85ff; /* Morado más oscuro al pasar el mouse */
-}
-
-.header-main {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    width: 150%;
-    justify-content: space-between;
-}
-
-.logo img {
-    width: 100px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+/* --- Menú Hamburguesa --- */
+.menu-toggle {
+    display: none; /* Oculto por defecto */
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
 }
 
 /* Sección Hero */
@@ -120,18 +154,21 @@ nav ul {
     background: linear-gradient(to right, #6A1B9A, #F8BBD0, #29B6F6); /* Degradado morado → rosado → azul */
     color: #a200b1;
     text-align: center;
-    padding: 100px 20px;
+    padding: 150px 20px;
 }
 
 .hero h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-size: 48px;
+    text-align: center;
+    margin: auto;
 }
 
 .hero p {
     font-size: 20px;
     margin-bottom: 30px;
-    color: #b76be9; /* Texto claro sobre el degradado */
+    text-align: center;
+    color: #f0c0ff; /* Texto claro sobre el degradado */
+    justify-content: space-between;
 }
 
 .cta-button {
@@ -142,6 +179,8 @@ nav ul {
     font-size: 16px;
     cursor: pointer;
     transition: all 0.3s ease;
+    display: inline-block;
+    margin-top: 20px;
 }
 
 .cta-button:hover {
@@ -150,7 +189,7 @@ nav ul {
 }
 
 .hero {
-    background-image: url('Pictures/TI_3.jpg'); 
+    background-image: url('Pictures/TI_7.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -422,4 +461,19 @@ footer {
     font-size: 13px;
     color: #f8f8f8;
     opacity: 0.8;
+}
+
+/* --- Estilos para móvil --- */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Mostrar botón hamburguesa en móvil */
+        position: absolute; /* Posicionarlo en la esquina derecha */
+        top: 50%;
+        right: 20px; /* Ajusta según necesites */
+        transform: translateY(-50%); /* Centrar verticalmente */
+    }
+
+    .main-nav {
+        display: none; /* Ocultar menú en móvil */
+    }
 }
