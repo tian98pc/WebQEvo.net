@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing:content-box;
 }
 
 body {
@@ -22,7 +22,7 @@ body {
 
 /* Contenedor General */
 .container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -34,7 +34,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0;
+    padding: 0;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -42,7 +42,7 @@ header {
 }
 
 .container.header-top {
-    max-width: 2000px;
+    max-width: 1980px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -99,6 +99,12 @@ header {
 
 
 /* --- Menú de Navegación --- */
+
+.main-nav {
+    display: flex;
+    gap: 30px;
+}
+
 .main-nav ul {
     list-style: none;
     display: flex;
@@ -115,27 +121,29 @@ header {
 }
 
 .main-nav ul li a:hover {
-    color: #ff6f61;
+    color: #e561ff;
 }
 
-/* --- Botón Pagar --- */
 .pay-button {
     background-color: #d64fff;
     color: #fff;
     border: none;
-    padding: 10px 20px;
-    font-size: 14px;
+    padding: 12px 24px;
+    font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    border-radius: 25px; /* Ajusta este valor según lo redondeado que quieras */
+    transition: all 0.3s ease;
 }
 
 .pay-button a {
-    text-decoration: none;
     color: #fff;
+    text-decoration: none;
+    display: block;
 }
 
 .pay-button:hover {
-    background-color: #e65148;
+    background-color: #4A148C;
+    transform: scale(1.05);
 }
 
 /* --- Menú Hamburguesa --- */
@@ -154,13 +162,13 @@ header {
     background: linear-gradient(to right, #6A1B9A, #F8BBD0, #29B6F6); /* Degradado morado → rosado → azul */
     color: #a200b1;
     text-align: center;
-    padding: 150px 20px;
+    padding: 150px 1px;
 }
 
 .hero h1 {
     font-size: 48px;
-    text-align: center;
     margin: auto;
+    text-align: center;
 }
 
 .hero p {
@@ -181,6 +189,7 @@ header {
     transition: all 0.3s ease;
     display: inline-block;
     margin-top: 20px;
+    border-radius: 25px;
 }
 
 .cta-button:hover {
@@ -199,12 +208,13 @@ header {
 }
 
 .hero h1 {
-    font-size: 36px;
+    font-size: 24px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .hero p {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 30px;
 }
 
@@ -466,14 +476,32 @@ footer {
 /* --- Estilos para móvil --- */
 @media (max-width: 768px) {
     .menu-toggle {
-        display: block; /* Mostrar botón hamburguesa en móvil */
-        position: absolute; /* Posicionarlo en la esquina derecha */
-        top: 50%;
-        right: 20px; /* Ajusta según necesites */
-        transform: translateY(-50%); /* Centrar verticalmente */
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: #ffffff;
+        cursor: pointer;
+        z-index: 999;
     }
 
     .main-nav {
-        display: none; /* Ocultar menú en móvil */
+        position:absolute;
+        top: 99px;
+        left: 0;
+        right: 0;
+        background-color: #691b9a;
+        flex-direction:column;
+        align-items: center;
+        padding: 10px 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+        z-index: 999;
+    }
+
+    .main-nav.open {
+        max-height: 300px;
     }
 }
