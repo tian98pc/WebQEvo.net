@@ -15,7 +15,7 @@ body {
 /* Cargar fuente personalizada */
 @font-face {
     font-family: 'MiFuente';
-    src: url('HONORSans-Regular.ttf') format('truetype');
+    src: url('ttf/Santander-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -137,7 +137,8 @@ header {
 
 .pay-button a {
     color: #fff;
-    text-decoration: none;
+    text-decoration:none;
+    font-family: 'MiFuente', sans-serif;
     display: block;
 }
 
