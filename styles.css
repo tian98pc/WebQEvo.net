@@ -15,7 +15,7 @@ body {
 /* Cargar fuente personalizada */
 @font-face {
     font-family: 'MiFuente';
-    src: url('ttf/Santander-Regular.ttf') format('truetype');
+    src: url('ttf/ConsolaMono-Book.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -24,7 +24,7 @@ body {
 .container {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 15px;
 }
 
 /* --- Header Principal --- */
@@ -170,6 +170,7 @@ header {
     font-size: 48px;
     margin: auto;
     text-align: center;
+    text-decoration: solid;
 }
 
 .hero p {
@@ -178,6 +179,7 @@ header {
     text-align: center;
     color: #f0c0ff; /* Texto claro sobre el degradado */
     justify-content: space-between;
+    text-decoration: solid;
 }
 
 .cta-button {
@@ -199,13 +201,13 @@ header {
 }
 
 .hero {
-    background-image: url('Pictures/TI_7.jpg'); 
-    background-size: cover;
+    background-image: url('Pictures/TI_6.jpg'); 
+    background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
     color: #fff;
     text-align: center;
-    padding: 480px 120px;
+    padding: 480px 25px;
 }
 
 .hero h1 {
@@ -239,15 +241,16 @@ header {
     flex-wrap: wrap;
     align-items: center;
     gap: 30px;
-    justify-content: space-between;
+    justify-content:space-between;
 }
 
 .about-text,
 .team-text {
     flex: 1 1 50%;
     font-size: 16px;
-    line-height: 1.7;
-    color: #212121;
+    line-height: 1.5;
+    color: #000000;
+    text-align: justify;
 }
 
 .about-image,
