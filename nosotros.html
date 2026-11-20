@@ -1,113 +1,208 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosotros - Quantum Evolution SpA</title>
-    <link rel="icon" href="pictures/logo.png" type="image/png">
-    <link rel="stylesheet" href="styles.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosotros | Quantum Evolution SpA</title>
+  <meta name="description" content="Conoce a Quantum Evolution SpA: nuestra misión, valores y enfoque cercano en soporte técnico a domicilio o remoto, redes y soluciones tecnológicas en Santiago, Chile.">
+  <link rel="canonical" href="https://quantumevo.net/nosotros.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Quantum Evolution SpA">
+  <meta property="og:title" content="Sobre Nosotros | Quantum Evolution SpA">
+  <meta property="og:description" content="Combinamos precisión técnica con trato humano y cercano para resolver necesidades tecnológicas de personas, familias y empresas.">
+  <meta property="og:url" content="https://quantumevo.net/nosotros.html">
+  <meta property="og:image" content="https://quantumevo.net/assets/img/logo.png">
+  <link rel="icon" href="assets/img/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
 
-<!-- Encabezado -->
-    <header>
-        <div class="container header-top">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-link" aria-label="Quantum Evolution SpA - Inicio">
+        <img src="assets/img/logo.png" alt="Logo Quantum Evolution SpA" class="brand-logo" width="44" height="44">
+        <span class="brand-text">
+          <span class="brand-name">Quantum Evolution</span>
+          <span class="brand-sub">Soporte TI · SpA</span>
+        </span>
+      </a>
 
-            <!-- Logo -->
-            <a href="index.html" class="logo"><img src="Pictures/logo.png" alt="Logo Quantum Evolution"></a>
-
-            <!-- Menú de Navegación -->
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-
-            <!-- Botón Pagar -->
-            <button class="pay-button"><a href="https://pay.sumup.com/b2c/QP0XE4X3">Reservar</a></button> 
-
-            <!-- Menú Hamburguesa (solo para móvil) -->
-            <button class="menu-toggle" aria-label="Abrir menú">
-                <i class="fas fa-bars"></i>
-            </button>
+      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="nosotros.html" class="active" aria-current="page">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <div class="nav-mobile-actions">
+          <a href="contacto.html#cotizar" class="btn btn--outline-dark">
+            <i class="fas fa-file-signature" aria-hidden="true"></i> Solicitar cotización
+          </a>
+          <a href="https://pay.sumup.com/b2c/QP0XE4X3" class="btn btn--sumup" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-credit-card" aria-hidden="true"></i> Paga tu reserva con SumUp
+          </a>
         </div>
-    </header>
+      </nav>
 
-    <!-- Sección Misión y Visión -->
-    <section class="about-section">
-        <div class="container">
-            <h2>Misión y Visión</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        Nuestra misión es transformar ideas en soluciones tangibles que impacten positivamente la sociedad.
-                        Trabajamos cada día para convertirnos en un referente en innovación tecnológica y servicios integrales.
-                    </p>
-                    <p> 
-                        Nuestra visión es ser líderes en desarrollo tecnológico, ayudando a empresas y personas a aprovechar al máximo las herramientas del futuro.
-                    </p>
-                </div>
-                <div class="about-image">
-                    <img src="Pictures/TI_5.jpg" alt="Misión y Visión">
-                </div>
-            </div>
-        </div>
+      <div class="header-actions">
+        <a href="contacto.html#cotizar" class="btn btn--outline-dark btn--sm btn--cotizar-desktop">Cotizar</a>
+        <a href="https://pay.sumup.com/b2c/QP0XE4X3" class="btn btn--sumup btn--sm" target="_blank" rel="noopener noreferrer" title="Paga tu reserva de visita técnica o diagnóstico con SumUp">
+          <i class="fas fa-credit-card" aria-hidden="true"></i> Pagar reserva
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
+          <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="page-hero">
+      <div class="container page-hero-inner">
+        <span class="eyebrow eyebrow--dark">Quiénes somos</span>
+        <h1>Tecnología cercana, confiable y bien ejecutada</h1>
+        <p>En Quantum Evolution SpA unimos conocimiento técnico actualizado con atención paciente y transparente para personas, familias y empresas en Santiago.</p>
+      </div>
     </section>
 
-    <!-- Sección Nuestro Equipo -->
-    <section class="team-section">
-        <div class="container">
-            <h2>Nuestro Equipo</h2>
-            <div class="team-content">
-                <div class="team-image">
-                    <img src="Pictures/REDES_2.jpg" alt="Nuestro Equipo">
-                </div>
-                <div class="team-text">
-                    <p>
-                        Contamos con un equipo multidisciplinario de ingenieros, desarrolladores, diseñadores y consultores apasionados por la tecnología.
-                        Juntos creamos soluciones personalizadas, ágiles y escalables para nuestros clientes.
-                    </p>
-                    <p>
-                        Cada integrante aporta experiencia, creatividad y compromiso para lograr resultados excepcionales.
-                    </p>
-                </div>
-            </div>
+    <section class="section">
+      <div class="container">
+        <div class="split-grid">
+          <div class="split-text">
+            <span class="eyebrow eyebrow--light">Misión y Visión</span>
+            <h2>Acercamos la tecnología para que trabaje a tu favor</h2>
+            <p>
+              <strong>Nuestra misión</strong> es entregar soluciones tecnológicas prácticas, seguras y transparentes: desde acompañar con paciencia a un adulto mayor en su primer smartphone hasta armar un PC Gamer de alto rendimiento o cablear una oficina completa.
+            </p>
+            <p>
+              <strong>Nuestra visión</strong> es consolidarnos como un socio tecnológico de confianza en Santiago y Chile, reconocido por la calidad de cada diagnóstico, la honestidad en nuestras recomendaciones y el respaldo profesional en cada servicio.
+            </p>
+          </div>
+          <div class="split-media">
+            <img src="assets/img/nosotros-soporte.webp" alt="Trabajo técnico y configuración de equipos en Quantum Evolution SpA" width="1200" height="800">
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Pie de Página -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <!-- Información Tributaria -->
-                <div class="tax-info">
-                    <h4>Información Tributaria</h4>
-                    <p><strong>Razón Social:</strong> Quantum Evolution SpA</p>
-                    <p><strong>RUT:</strong> 78.006.043-3</p>
-                    <p><strong>Dirección:</strong> Antonio Bellet 193, oficina 302, Providencia, Chile</p>
-                </div>
-
-                <!-- Iconos de Redes Sociales -->
-                <div class="social-icons">
-                    <a href="https://wa.me/56228121175"  target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                    <a href="mailto:info@quantumevo.net" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
-                    <a href="https://www.instagram.com/quantum.evo"  target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/company/quantum-evolution-spa"  target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-
-                <!-- Redes Sociales o Copyright -->
-                <div class="footer-bottom">
-                    <p>&copy; 2025 Quantum Evolution SpA. Todos los derechos reservados.</p>
-                </div>
-            </div>
+    <section class="section section--subtle">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow eyebrow--light">Cómo pensamos</span>
+          <h2>Nuestros pilares de servicio</h2>
+          <p>Más allá de reparar un equipo, buscamos que te quedes tranquilo entendiendo qué se hizo y por qué.</p>
         </div>
-    </footer>
-    <script src="script.js"></script>
+
+        <div class="values-grid">
+          <div class="value-card">
+            <div class="pillar-icon"><i class="fas fa-handshake" aria-hidden="true"></i></div>
+            <h3>Honestidad y transparencia</h3>
+            <p>Te informamos el diagnóstico real y el valor antes de realizar cualquier trabajo. Si algo no conviene reparar, te lo decimos con claridad.</p>
+          </div>
+          <div class="value-card">
+            <div class="pillar-icon"><i class="fas fa-microchip" aria-hidden="true"></i></div>
+            <h3>Criterio técnico</h3>
+            <p>Cuidamos cada detalle: respaldos seguros, compatibilidad real en hardware, cables bien ordenados y pruebas antes de entregar.</p>
+          </div>
+          <div class="value-card">
+            <div class="pillar-icon"><i class="fas fa-heart" aria-hidden="true"></i></div>
+            <h3>Trato humano</h3>
+            <p>Adaptamos nuestra comunicación a cada cliente, ya sea un gamer entusiasta, una pyme o un adulto mayor dando sus primeros pasos digitales.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="split-grid split-grid--reverse">
+          <div class="split-text">
+            <span class="eyebrow eyebrow--light">Experiencia en terreno</span>
+            <h2>Soporte integral para hardware, software y redes</h2>
+            <p>
+              Trabajamos con equipamiento de hogar y oficina: computadores Windows, macOS y Linux, smartphones, redes cableadas UTP, switches y estaciones de alto rendimiento.
+            </p>
+            <p>
+              Operamos formalmente como <strong>Quantum Evolution SpA</strong> en Santiago, Chile, ofreciendo soporte técnico a domicilio o remoto según lo que necesites.
+            </p>
+          </div>
+          <div class="split-media">
+            <img src="assets/img/nosotros-redes.webp" alt="Instalación y mantenimiento de equipos de red en rack" width="1200" height="800" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container cta-band-inner">
+        <div>
+          <h2>¿Conversamos sobre lo que necesitas?</h2>
+          <p>Revisa nuestros servicios o pídenos una cotización sin compromiso.</p>
+        </div>
+        <div class="cta-band-actions">
+          <a href="servicios.html" class="btn btn--outline-dark btn--lg">Ver servicios</a>
+          <a href="contacto.html#cotizar" class="btn btn--primary btn--lg">Solicitar cotización</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-link">
+            <img src="assets/img/logo.png" alt="Logo Quantum Evolution SpA" class="brand-logo" width="44" height="44">
+            <span class="brand-text">
+              <span class="brand-name">Quantum Evolution</span>
+              <span class="brand-sub">Soporte TI · SpA</span>
+            </span>
+          </a>
+          <p>Soporte técnico a domicilio o remoto, armado de PC Gamer, redes UTP y asesoría tecnológica cercana en Santiago, Chile.</p>
+          <div class="social-icons">
+            <a href="https://wa.me/56228121175" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+            <a href="mailto:info@quantumevo.net" aria-label="Correo electrónico"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/quantum.evo" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/company/quantum-evolution-spa" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html#cotizar">Cotizar servicio</a></li>
+            <li><a href="https://pay.sumup.com/b2c/QP0XE4X3" target="_blank" rel="noopener noreferrer">Paga tu reserva con SumUp</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Información Tributaria</h4>
+          <ul class="tax-list">
+            <li><strong>Razón Social:</strong> Quantum Evolution SpA</li>
+            <li><strong>RUT:</strong> 78.006.043-3</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 Quantum Evolution SpA. Todos los derechos reservados.</span>
+        <span>Santiago, Chile · Soporte técnico a domicilio o remoto</span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/56228121175?text=Hola%20Quantum%20Evolution%2C%20quisiera%20hacer%20una%20consulta." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp a Quantum Evolution SpA">
+    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+  </a>
+
+  <script src="script.js"></script>
 </body>
-
 </html>

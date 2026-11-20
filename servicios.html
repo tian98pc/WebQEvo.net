@@ -1,149 +1,342 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios - Quantum Evolution SpA</title>
-    <link rel="icon" href="pictures/logo.png" type="image/png">
-    <link rel="stylesheet" href="styles.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios | Quantum Evolution SpA</title>
+  <meta name="description" content="Conoce los 7 servicios de Quantum Evolution SpA: asesoría para adultos mayores, formateo, software, reparación de PC y smartphones, cableado UTP, armado de PC Gamer y consultoría TI.">
+  <link rel="canonical" href="https://quantumevo.net/servicios.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Quantum Evolution SpA">
+  <meta property="og:title" content="Servicios Tecnológicos | Quantum Evolution SpA">
+  <meta property="og:description" content="Soporte técnico a domicilio o remoto en Santiago, Chile. Cotiza tu servicio o paga tu reserva con SumUp.">
+  <meta property="og:url" content="https://quantumevo.net/servicios.html">
+  <meta property="og:image" content="https://quantumevo.net/assets/img/logo.png">
+  <link rel="icon" href="assets/img/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
 
-<!-- Encabezado -->
-    <header>
-        <div class="container header-top">
-    
-            <!-- Logo -->
-            <a href="index.html" class="logo"><img src="Pictures/logo.png" alt="Logo Quantum Evolution"></a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-link" aria-label="Quantum Evolution SpA - Inicio">
+        <img src="assets/img/logo.png" alt="Logo Quantum Evolution SpA" class="brand-logo" width="44" height="44">
+        <span class="brand-text">
+          <span class="brand-name">Quantum Evolution</span>
+          <span class="brand-sub">Soporte TI · SpA</span>
+        </span>
+      </a>
 
-            <!-- Menú de Navegación -->
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-
-            <!-- Botón Pagar -->
-            <button class="pay-button"><a href="https://pay.sumup.com/b2c/QP0XE4X3">Reservar</a></button> 
-
-            <!-- Menú Hamburguesa (solo para móvil) -->
-            <button class="menu-toggle" aria-label="Abrir menú">
-                <i class="fas fa-bars"></i>
-            </button>
+      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html" class="active" aria-current="page">Servicios</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <div class="nav-mobile-actions">
+          <a href="contacto.html#cotizar" class="btn btn--outline-dark">
+            <i class="fas fa-file-signature" aria-hidden="true"></i> Solicitar cotización
+          </a>
+          <a href="https://pay.sumup.com/b2c/QP0XE4X3" class="btn btn--sumup" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-credit-card" aria-hidden="true"></i> Paga tu reserva con SumUp
+          </a>
         </div>
-    </header>
+      </nav>
 
-    <!-- Sección Servicios -->
-    <section class="services-section">
-        <div class="container">
-            <h2>Nuestros Servicios</h2>
-            <p>En Quantum Evolution SpA, ofrecemos una amplia gama de servicios tecnológicos para satisfacer todas tus necesidades, como:</p>
+      <div class="header-actions">
+        <a href="contacto.html#cotizar" class="btn btn--outline-dark btn--sm btn--cotizar-desktop">Cotizar</a>
+        <a href="https://pay.sumup.com/b2c/QP0XE4X3" class="btn btn--sumup btn--sm" target="_blank" rel="noopener noreferrer" title="Paga tu reserva de visita técnica o diagnóstico con SumUp">
+          <i class="fas fa-credit-card" aria-hidden="true"></i> Pagar reserva
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
+          <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </header>
 
-            <!-- Servicio 1 -->
-            <div class="service-item">
-                <div class="service-image">
-                    <img src="Pictures/Asesoria adulto mayor.png" alt="Configuración inicial de equipos">
-                </div>
-                <div class="service-text">
-                    <h3>Configuración inicial de equipos tecnológicos y asesoría de uso para adultos mayores.</h3>
-                </div>
-            </div>
-
-            <!-- Servicio 2 -->
-            <div class="service-item">
-                <div class="service-image">
-                    <img src="Pictures/Mantencion de equipos.png" alt="Formateo de computadores">
-                </div>
-                <div class="service-text">
-                    <h3>Formateo de computadores (MacOS/Win/Linux).</h3>
-                </div>
-            </div>
-
-            <!-- Servicio 3 -->
-            <div class="service-item">
-                <div class="service-image">
-                    <img src="Pictures/Instalacion de software.png" alt="Instalación de software">
-                </div>
-                <div class="service-text">
-                    <h3>Instalación de software (Windows 10/11, Office, etc.).</h3>
-                </div>
-            </div>
-
-            <!-- Servicio 4 -->
-            <div class="service-item">
-                <div class="service-image">
-                    <img src="Pictures/Visita tecnica.png" alt="Reparación de dispositivos">
-                </div>
-                <div class="service-text">
-                    <h3>Reparación y/o mantención de computadores y smartphones.</h3>
-                </div>
-            </div>
-
-            <!-- Servicio 5 -->
-            <div class="service-item">
-                <div class="service-image">
-                    <img src="Pictures/Instalacion de cables de red.png" alt="Cableado de red">
-                </div>
-                <div class="service-text">
-                    <h3>Cableado de red UTP, venta de cables RJ45 a medida.</h3>
-                </div>
-            </div>
-
-            <!-- Servicio 6 -->
-            <div class="service-item">
-                <div class="service-image">
-                    <img src="Pictures/Armado PC gamer.png" alt="Armado de PC Gamer">
-                </div>
-                <div class="service-text">
-                    <h3>Armado de PC GAMER.</h3>
-                </div>
-            </div>
-
-            <!-- Servicio 7 -->
-            <div class="service-item">
-                <div class="service-image">
-                    <img src="Pictures/Visita tecnica.png" alt="Asesoramiento online y presencial">
-                </div>
-                <div class="service-text">
-                    <h3>Asesoramiento online y presencial.</h3>
-                </div>
-            </div>
-
-        </div>
+  <main id="contenido">
+    <section class="page-hero">
+      <div class="container page-hero-inner">
+        <span class="eyebrow eyebrow--dark">Catálogo completo</span>
+        <h1>Nuestros Servicios</h1>
+        <p>Elige el servicio que necesitas para solicitar una cotización sin compromiso o paga tu reserva de visita técnica con SumUp.</p>
+      </div>
     </section>
 
-    <!-- Pie de Página -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <!-- Información Tributaria -->
-                <div class="tax-info">
-                    <h4>Información Tributaria</h4>
-                    <p><strong>Razón Social:</strong> Quantum Evolution SpA</p>
-                    <p><strong>RUT:</strong> 78.006.043-3</p>
-                    <p><strong>Dirección:</strong> Antonio Bellet 193, oficina 302, Providencia, Chile</p>
-                </div>
+    <section class="section">
+      <div class="container">
+        <div class="services-detailed">
 
-                <!-- Iconos de Redes Sociales -->
-                <div class="social-icons">
-                    <a href="https://wa.me/56228121175"  target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                    <a href="mailto:info@quantumevo.net" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
-                    <a href="https://www.instagram.com/quantum.evo"  target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/company/quantum-evolution-spa"  target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-
-                <!-- Redes Sociales o Copyright -->
-                <div class="footer-bottom">
-                    <p>&copy; 2025 Quantum Evolution SpA. Todos los derechos reservados.</p>
-                </div>
+          <!-- Servicio 1 -->
+          <article class="service-detail-card" id="adulto-mayor">
+            <div class="service-detail-media">
+              <img src="assets/img/servicio-adulto-mayor.webp" alt="Configuración inicial y asesoría para adultos mayores" width="720" height="720">
             </div>
+            <div class="service-detail-body">
+              <div class="service-detail-meta">
+                <span class="service-tag">Servicio 01</span>
+                <span class="service-modality"><i class="fas fa-house-laptop" aria-hidden="true"></i> A domicilio o remoto</span>
+              </div>
+              <h2>Configuración inicial de equipos tecnológicos y asesoría de uso para adultos mayores</h2>
+              <p>Acompañamiento cercano y paciente para que tus familiares disfruten su celular, tablet o computador con total confianza y seguridad.</p>
+              <ul class="service-bullets">
+                <li><i class="fas fa-check" aria-hidden="true"></i> Puesta en marcha de teléfonos, tablets y PC</li>
+                <li><i class="fas fa-check" aria-hidden="true"></i> Configuración de WhatsApp, correo y videollamadas</li>
+                <li><i class="fas fa-check" aria-hidden="true"></i> Ajuste de tamaño de letra y accesibilidad</li>
+                <li><i class="fas fa-check" aria-hidden="true"></i> Consejos prácticos contra estafas digitales</li>
+              </ul>
+              <div class="service-detail-actions">
+                <a href="contacto.html?servicio=Asesoria+adulto+mayor#cotizar" class="btn btn--primary btn--sm">Cotizar este servicio</a>
+                <a href="https://wa.me/56228121175?text=Hola%2C%20quisiera%20cotizar%20el%20servicio%20de%20configuraci%C3%B3n%20y%20asesor%C3%ADa%20para%20adultos%20mayores." class="btn btn--outline-light btn--sm" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-whatsapp" aria-hidden="true"></i> Consultar por WhatsApp
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Servicio 2 -->
+          <article class="service-detail-card" id="formateo">
+            <div class="service-detail-media">
+              <img src="assets/img/servicio-formateo.webp" alt="Formateo de computadores macOS, Windows y Linux" width="720" height="720" loading="lazy">
+            </div>
+            <div class="service-detail-body">
+              <div class="service-detail-meta">
+                <span class="service-tag">Servicio 02</span>
+                <span class="service-modality"><i class="fas fa-desktop" aria-hidden="true"></i> macOS · Windows · Linux</span>
+              </div>
+              <h2>Formateo de computadores (macOS / Windows / Linux)</h2>
+              <p>¿Tu equipo está lento, con virus o errores constantes? Realizamos instalación limpia del sistema operativo cuidando tus archivos importantes.</p>
+              <ul class="service-bullets">
+                <li><i class="fas fa-check" aria-hidden="true"></i> Respaldo previo de documentos y fotos</li>
+                <li><i class="fas fa-check" aria-hidden="true"></i> Instalación limpia de Windows, macOS o Linux</li>
+                <li><i class="fas fa-check" aria-hidden="true"></i> Actualización de controladores (drivers)</li>
+                <li><i class="fas fa-check" aria-hidden="true"></i> Optimización inicial de rendimiento</li>
+              </ul>
+              <div class="service-detail-actions">
+                <a href="contacto.html?servicio=Formateo+de+computadores#cotizar" class="btn btn--primary btn--sm">Cotizar este servicio</a>
+                <a href="https://wa.me/56228121175?text=Hola%2C%20quisiera%20cotizar%20el%20formateo%20de%20un%20computador." class="btn btn--outline-light btn--sm" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-whatsapp" aria-hidden="true"></i> Consultar por WhatsApp
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Servicio 3 -->
+          <article class="service-detail-card" id="software">
+            <div class="service-detail-media">
+              <img src="assets/img/servicio-software.webp" alt="Instalación de Windows 10/11, Office y programas" width="720" height="720" loading="lazy">
+            </div>
+            <div class="service-detail-body">
+              <div class="service-detail-meta">
+                <span class="service-tag">Servicio 03</span>
+                <span class="service-modality"><i class="fas fa-download" aria-hidden="true"></i> A domicilio o remoto</span>
+              </div>
+              <h2>Instalación de software (Windows 10/11, Office, etc.)</h2>
+              <p>Dejamos tu computador listo para trabajar, estudiar o crear con todas las herramientas que necesitas correctamente configuradas.</p>
+              <ul class="service-bullets">
+                <li><i class="fas fa-check" aria-hidden="true"></i> Actualización e instalación de Windows 10 y 11</li>
+                <li><i class="fas fa-check" aria-hidden="true"></i> Suite Office, PDF, navegadores y correo</li>
+                <li><i class="fas fa-check" aria-hidden="true"></i> Impresoras, periféricos y respaldo en la nube</li>
+                <li><i class="fas fa-check" aria-hidden="true"></i> Seguridad básica y eliminación de software no deseado</li>
+              </ul>
+              <div class="service-detail-actions">
+                <a href="contacto.html?servicio=Instalacion+de+software#cotizar" class="btn btn--primary btn--sm">Cotizar este servicio</a>
+                <a href="https://wa.me/56228121175?text=Hola%2C%20quisiera%20cotizar%20instalaci%C3%B3n%20de%20software." class="btn btn--outline-light btn--sm" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-whatsapp" aria-hidden="true"></i> Consultar por WhatsApp
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Servicio 4 -->
+          <article class="service-detail-card" id="reparacion">
+            <div class="service-detail-media">
+              <img src="assets/img/servicio-reparacion.webp" alt="Reparación y mantención de computadores y smartphones" width="720" height="720" loading="lazy">
+            </div>
+            <div class="service-detail-body">
+              <div class="service-detail-meta">
+                <span class="service-tag">Servicio 04</span>
+                <span class="service-modality"><i class="fas fa-screwdriver-wrench" aria-hidden="true"></i> Laboratorio y Diagnóstico</span>
+              </div>
+              <h2>Reparación y/o mantención de computadores y smartphones</h2>
+              <p>Alarga la vida útil de tus dispositivos con mantención preventiva o reparación ante fallas de hardware, sobrecalentamiento o lentitud.</p>
+              <ul class="service-bullets">
+                <li><i class="fas fa-check" aria-hidden="true"></i> Diagnóstico técnico claro antes de reparar</li>
+                <li><i class="fas fa-check" aria-hidden="true"></i> Limpieza interna y cambio de pasta térmica</li>
+                <li><i class="fas fa-check" aria-hidden="true"></i> Ampliación de memoria RAM y discos SSD</li>
+                <li><i class="fas fa-check" aria-hidden="true"></i> Evaluación y reparación de smartphones y notebooks</li>
+              </ul>
+              <div class="service-detail-actions">
+                <a href="contacto.html?servicio=Reparacion+y+mantencion#cotizar" class="btn btn--primary btn--sm">Cotizar este servicio</a>
+                <a href="https://wa.me/56228121175?text=Hola%2C%20necesito%20reparaci%C3%B3n%20o%20mantenci%C3%B3n%20para%20mi%20equipo." class="btn btn--outline-light btn--sm" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-whatsapp" aria-hidden="true"></i> Consultar por WhatsApp
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Servicio 5 -->
+          <article class="service-detail-card" id="redes">
+            <div class="service-detail-media">
+              <img src="assets/img/servicio-redes.webp" alt="Cableado de red UTP y venta de cables RJ45 a medida" width="720" height="720" loading="lazy">
+            </div>
+            <div class="service-detail-body">
+              <div class="service-detail-meta">
+                <span class="service-tag">Servicio 05</span>
+                <span class="service-modality"><i class="fas fa-network-wired" aria-hidden="true"></i> Hogares y Oficinas</span>
+              </div>
+              <h2>Cableado de red UTP y venta de cables RJ45 a medida</h2>
+              <p>Mejora la estabilidad y velocidad de tu conexión a internet con cableado estructurado limpio y patch cords fabricados al largo exacto que necesitas.</p>
+              <ul class="service-bullets">
+                <li><i class="fas fa-check" aria-hidden="true"></i> Tendido y ordenamiento de cableado UTP</li>
+                <li><i class="fas fa-check" aria-hidden="true"></i> Confección y testeo de cables RJ45 a medida</li>
+                <li><i class="fas fa-check" aria-hidden="true"></i> Conexión de routers, switches y puntos de acceso</li>
+                <li><i class="fas fa-check" aria-hidden="true"></i> Ideal para teletrabajo, gaming y pymes</li>
+              </ul>
+              <div class="service-detail-actions">
+                <a href="contacto.html?servicio=Cableado+de+red+UTP#cotizar" class="btn btn--primary btn--sm">Cotizar este servicio</a>
+                <a href="https://wa.me/56228121175?text=Hola%2C%20quisiera%20cotizar%20cableado%20UTP%20o%20cables%20RJ45%20a%20medida." class="btn btn--outline-light btn--sm" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-whatsapp" aria-hidden="true"></i> Consultar por WhatsApp
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Servicio 6 -->
+          <article class="service-detail-card" id="pc-gamer">
+            <div class="service-detail-media">
+              <img src="assets/img/servicio-pc-gamer.webp" alt="Armado de PC Gamer a medida" width="720" height="720" loading="lazy">
+            </div>
+            <div class="service-detail-body">
+              <div class="service-detail-meta">
+                <span class="service-tag">Servicio 06</span>
+                <span class="service-modality"><i class="fas fa-gamepad" aria-hidden="true"></i> Ensamblaje a medida</span>
+              </div>
+              <h2>Armado de PC Gamer</h2>
+              <p>Te ayudamos a elegir piezas compatibles según tu presupuesto o ensamblamos los componentes que ya compraste con acabado prolijo y pruebas completas.</p>
+              <ul class="service-bullets">
+                <li><i class="fas fa-check" aria-hidden="true"></i> Cotización y validación de compatibilidad de piezas</li>
+                <li><i class="fas fa-check" aria-hidden="true"></i> Ensamblaje profesional y cable management limpio</li>
+                <li><i class="fas fa-check" aria-hidden="true"></i> Configuración de BIOS, XMP/EXPO y drivers</li>
+                <li><i class="fas fa-check" aria-hidden="true"></i> Pruebas de estabilidad y temperaturas</li>
+              </ul>
+              <div class="service-detail-actions">
+                <a href="contacto.html?servicio=Armado+de+PC+Gamer#cotizar" class="btn btn--primary btn--sm">Cotizar este servicio</a>
+                <a href="https://wa.me/56228121175?text=Hola%2C%20quisiera%20cotizar%20el%20armado%20de%20un%20PC%20Gamer." class="btn btn--outline-light btn--sm" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-whatsapp" aria-hidden="true"></i> Consultar por WhatsApp
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Servicio 7 -->
+          <article class="service-detail-card" id="asesoria">
+            <div class="service-detail-media">
+              <img src="assets/img/servicio-asesoria.webp" alt="Asesoramiento tecnológico online y presencial" width="720" height="720" loading="lazy">
+            </div>
+            <div class="service-detail-body">
+              <div class="service-detail-meta">
+                <span class="service-tag">Servicio 07</span>
+                <span class="service-modality"><i class="fas fa-headset" aria-hidden="true"></i> A domicilio o remoto</span>
+              </div>
+              <h2>Asesoramiento online y presencial</h2>
+              <p>Orientación experta para tomar buenas decisiones tecnológicas antes de invertir, resolver dudas puntuales o planificar mejoras en tu equipamiento.</p>
+              <ul class="service-bullets">
+                <li><i class="fas fa-check" aria-hidden="true"></i> Recomendación de compra de notebooks y PCs</li>
+                <li><i class="fas fa-check" aria-hidden="true"></i> Soporte remoto rápido para incidencias cotidianas</li>
+                <li><i class="fas fa-check" aria-hidden="true"></i> Planificación de respaldos y orden digital</li>
+                <li><i class="fas fa-check" aria-hidden="true"></i> Visitas técnicas coordinadas para hogar y oficina</li>
+              </ul>
+              <div class="service-detail-actions">
+                <a href="contacto.html?servicio=Asesoramiento+online+y+presencial#cotizar" class="btn btn--primary btn--sm">Cotizar este servicio</a>
+                <a href="https://wa.me/56228121175?text=Hola%2C%20quisiera%20coordinar%20un%20asesoramiento%20t%C3%A9cnico." class="btn btn--outline-light btn--sm" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-whatsapp" aria-hidden="true"></i> Consultar por WhatsApp
+                </a>
+              </div>
+            </div>
+          </article>
+
         </div>
-    </footer>
-    <script src="script.js"></script>
+      </div>
+    </section>
+
+    <section class="section section--subtle">
+      <div class="container">
+        <div class="sumup-banner">
+          <div class="sumup-banner-info">
+            <span class="eyebrow eyebrow--light" style="margin-bottom: 10px;">Reserva de visita o diagnóstico</span>
+            <h3>¿Prefieres agendar tu visita técnica de inmediato?</h3>
+            <p>Puedes pagar la reserva de tu visita técnica o diagnóstico de manera segura mediante SumUp, o enviarnos primero el formulario para recibir tu cotización personalizada.</p>
+          </div>
+          <div class="sumup-banner-actions">
+            <a href="https://pay.sumup.com/b2c/QP0XE4X3" class="btn btn--sumup" target="_blank" rel="noopener noreferrer">
+              <i class="fas fa-credit-card" aria-hidden="true"></i> Paga tu reserva con SumUp
+            </a>
+            <a href="contacto.html#cotizar" class="btn btn--outline-light">Ir al formulario</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-link">
+            <img src="assets/img/logo.png" alt="Logo Quantum Evolution SpA" class="brand-logo" width="44" height="44">
+            <span class="brand-text">
+              <span class="brand-name">Quantum Evolution</span>
+              <span class="brand-sub">Soporte TI · SpA</span>
+            </span>
+          </a>
+          <p>Soporte técnico a domicilio o remoto, armado de PC Gamer, redes UTP y asesoría tecnológica cercana en Santiago, Chile.</p>
+          <div class="social-icons">
+            <a href="https://wa.me/56228121175" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+            <a href="mailto:info@quantumevo.net" aria-label="Correo electrónico"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/quantum.evo" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/company/quantum-evolution-spa" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html#cotizar">Cotizar servicio</a></li>
+            <li><a href="https://pay.sumup.com/b2c/QP0XE4X3" target="_blank" rel="noopener noreferrer">Paga tu reserva con SumUp</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Información Tributaria</h4>
+          <ul class="tax-list">
+            <li><strong>Razón Social:</strong> Quantum Evolution SpA</li>
+            <li><strong>RUT:</strong> 78.006.043-3</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 Quantum Evolution SpA. Todos los derechos reservados.</span>
+        <span>Santiago, Chile · Soporte técnico a domicilio o remoto</span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/56228121175?text=Hola%20Quantum%20Evolution%2C%20quisiera%20hacer%20una%20consulta%20sobre%20sus%20servicios." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp a Quantum Evolution SpA">
+    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+  </a>
+
+  <script src="script.js"></script>
 </body>
 </html>
